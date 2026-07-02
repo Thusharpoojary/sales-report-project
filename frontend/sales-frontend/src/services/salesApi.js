@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE ='http://localhost:8080/api/sales';
+const BASE ='https://sales-report-project-1.onrender.com/api/sales';
 
 export const getKpis=()=>axios.get(`${BASE}/kips`);
 export const getByRegion=()=> axios.get(`${BASE}/by-region`);

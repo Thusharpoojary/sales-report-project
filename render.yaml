@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: salesreport
+    runtime: java
+    rootDir: backend/salesreport
+    buildCommand: mvn clean package -DskipTests
+    startCommand: java -jar target/salesreport-0.0.1-SNAPSHOT.jar
+    envVars:
+      - key: JAVA_VERSION
+        value: 21
+      - key: DB_HOST
+        value: yamanote.proxy.rlwy.net
+      - key: DB_PORT
+        value: 37418
+      - key: DB_NAME
+        value: railway
+      - key: DB_USERNAME
+        value: root
+      - key: DB_PASSWORD
+        sync: false

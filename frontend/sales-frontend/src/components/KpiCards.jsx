@@ -1,4 +1,4 @@
-import { lazy } from "react";
+import React from 'react';
 const card ={
     background:'#1e293b',borderRadius:12,padding:'20px 28px',
     color:'#fff',flex:1,minWidth:180

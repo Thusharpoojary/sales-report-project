@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE ='https://sales-report-project-1.onrender.com/api/sales';
+const BASE =process.env.REACT_APP_API_URL || 'http://localhost:8080/api/sales';
 
 
 export const getKpis=()=>axios.get(`${BASE}/kips`);
